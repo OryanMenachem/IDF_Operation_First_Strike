@@ -11,7 +11,7 @@ namespace IDF_Operation_First_Strike
         string DateOfEstablishment { get; } = "10/12/1987";
         string CurrentCommander { get; set; } = "Izz al-Din al-Haddad";
         
-        //List<Terrorists> = new List<Terrorists>();
+        List<Terrorist> Terrorists = new List<Terrorist>();
     }
 
 

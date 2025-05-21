@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace IDF_Operation_First_Strike
+{
+    internal static class TerroristsNames
+    {
+        public static  string[] FirstNames { get; } = {
+                "Ahmad", "Yousef", "Saeed", "Khaled", "Rami",
+                "Maher", "Fadi", "Basem", "Nader", "Alaa",
+                "Hussein", "Ali", "Wasim", "Mahmoud", "Ibrahim",
+                "Tariq", "Jihad", "Samir", "Ammar", "Sharif"
+            };
+
+        public static string[] LastNames { get; } = {
+                "Khalil", "Mansour", "Al-Ali", "Zeidan", "Yousef",
+                "Salim", "Darwish", "Radi", "Jaber", "Naim",
+                "Barakat", "Omran", "Al-Zahar", "Hijazi", "Kamal",
+                "Najm", "Shaaban", "Maqdad", "Abu-Salim", "Qasem"
+            };
+    }
+}
