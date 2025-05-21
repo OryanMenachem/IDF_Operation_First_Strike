@@ -21,5 +21,12 @@ namespace IDF_Operation_First_Strike
                 "Barakat", "Omran", "Al-Zahar", "Hijazi", "Kamal",
                 "Najm", "Shaaban", "Maqdad", "Abu-Salim", "Qasem"
             };
+
+
+        public static string GetRandomName()
+        {
+            return FirstNames[GetRandomNumber.Rand.Next(FirstNames.Length)]  + " " + 
+                LastNames[GetRandomNumber.Rand.Next(LastNames.Length)];
+        }
     }
 }
