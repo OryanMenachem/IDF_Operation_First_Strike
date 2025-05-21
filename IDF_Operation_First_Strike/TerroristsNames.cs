@@ -8,14 +8,14 @@ namespace IDF_Operation_First_Strike
 {
     internal static class TerroristsNames
     {
-        public static  string[] FirstNames { get; } = {
+        public static  string[] FirstNames  = {
                 "Ahmad", "Yousef", "Saeed", "Khaled", "Rami",
                 "Maher", "Fadi", "Basem", "Nader", "Alaa",
                 "Hussein", "Ali", "Wasim", "Mahmoud", "Ibrahim",
                 "Tariq", "Jihad", "Samir", "Ammar", "Sharif"
             };
 
-        public static string[] LastNames { get; } = {
+        public static string[] LastNames  = {
                 "Khalil", "Mansour", "Al-Ali", "Zeidan", "Yousef",
                 "Salim", "Darwish", "Radi", "Jaber", "Naim",
                 "Barakat", "Omran", "Al-Zahar", "Hijazi", "Kamal",
