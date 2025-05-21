@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal interface IStrikeOption
+    internal abstract class StrikeOption
     {
-        string Name { get; }
-        int RemainingStrikes { get; set; }
-        int FuelSupply { get; }
-        string TargetType { get; }
+        public abstract string Name { get; }
+        public abstract string BombType { get; }
+        public abstract int RemainingBombs { get; set; }
+        public abstract int FuelSupply { get; set; }
+        public abstract string TargetType { get; }
     }
 }
