@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal class Program
+    internal static class GetRandomNumber
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(new RandomDateTime().Next());
-
-
-
-        }
+        public static Random Rand = new Random();
     }
 }
