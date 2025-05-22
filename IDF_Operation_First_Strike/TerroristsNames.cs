@@ -23,7 +23,7 @@ namespace IDF_Operation_First_Strike
             };
 
 
-        public static string GetRandomName()
+        public static string GetRandomName() // Returns a list with a random first name and last name
         {
             return FirstNames[GetRandomNumber.Rand.Next(FirstNames.Length)]  + " " + 
                 LastNames[GetRandomNumber.Rand.Next(LastNames.Length)];

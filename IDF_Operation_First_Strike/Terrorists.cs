@@ -8,15 +8,15 @@ namespace IDF_Operation_First_Strike
 {
     internal class Terrorist
     {
-        string Name { get; }
-        int Rank { get; }
-        bool IsALive { get; set; } = true;
+        public string Name { get; } 
+        public int Rank { get; }
+        public bool IsALive { get; set; } = true;
 
-        List<string> Weapons = new List<string>();
+        public List<string> Weapons = new List<string>();
 
-        public Terrorist(string name, int rank, List<string> weapons)
+        public  Terrorist(string name, int rank, List<string> weapons)
         {
-            name = name.ToLower();
+            Name = name;
             Rank = rank;
             Weapons = weapons;
         }
