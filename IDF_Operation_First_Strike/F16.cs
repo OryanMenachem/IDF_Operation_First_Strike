@@ -13,6 +13,7 @@ namespace IDF_Operation_First_Strike
         public override int RemainingBombs { get; set; } = 8;
         public override int FuelSupply { get; set;  } = 150;
         public override string TargetType { get; } = "Buildings";
+
         public string Operator = "pilot";
 
     }
