@@ -17,6 +17,12 @@ namespace IDF_Operation_First_Strike
         {
             TerroristsList.Add(terrorist);
         }
+
+        public static Terrorist GetTerrorist()
+        {
+            return TerroristsList[GetRandomNumber.Rand.Next(0, TerroristsList.Count())];
+        }
+
     }
 
 

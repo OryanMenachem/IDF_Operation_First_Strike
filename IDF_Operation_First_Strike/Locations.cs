@@ -12,8 +12,7 @@ namespace IDF_Operation_First_Strike
 
         public static string GetRandomLocation()
         {
-            Random rand = new Random();
-            return LocationList[rand.Next(LocationList.Length)];
+            return LocationList[GetRandomNumber.Rand.Next(LocationList.Length)];
         }
     }
 }
