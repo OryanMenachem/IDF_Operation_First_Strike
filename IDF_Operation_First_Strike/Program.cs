@@ -13,7 +13,8 @@ namespace IDF_Operation_First_Strike
 
           
 
-
+           
+            Console.WriteLine(Hamas.CurrentCommander);
 
         }
     }
