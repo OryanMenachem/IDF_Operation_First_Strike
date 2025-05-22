@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal class Program
+    internal class GenerateIntel
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(new RandomDateTime().Next());
 
-
-
-        }
+        string Location = Locations.GetRandomLocation();
+        DateTime TimeCollected;
     }
 }
