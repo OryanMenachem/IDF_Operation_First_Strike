@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal class Aman
+    internal class IntelligenceAnalysis
     {
-        public Terrorist Terrorist;
+        //MostCommonTerrorist = 
 
-        public string LastLocation;
+        //AvailableWeaponsAndCapacity =
 
-        public DateTime TimeCollected;
 
-        public Aman() { }
+
 
     }
 }
