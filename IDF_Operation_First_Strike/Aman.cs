@@ -8,9 +8,9 @@ namespace IDF_Operation_First_Strike
 {
     internal class Aman
     {
-        public Terrorist Terrorist;
+        //public Terrorist Terrorist;
         public string LastLocation;
-        public DateTime GetTime;
+        public DateTime TimeCollected;
 
 
     }

@@ -8,5 +8,8 @@ namespace IDF_Operation_First_Strike
 {
     internal class GenerateIntel
     {
+
+        string Location = Locations.GetRandomLocation();
+        DateTime TimeCollected;
     }
 }

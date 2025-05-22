@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal class Locations
+    internal static class Locations
     {
         public static string[] LocationList = { "at home", "in a car", "at a meeting", "outside" };
 
