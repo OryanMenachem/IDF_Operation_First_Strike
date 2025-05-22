@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal class Program
+    internal class Aman
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(new RandomDateTime().Next());
+        //public Terrorist Terrorist;
+        public string LastLocation;
+        public DateTime TimeCollected;
 
 
-
-        }
     }
 }
