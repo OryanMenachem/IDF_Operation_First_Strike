@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal class GenerateIntel
+    internal static class GenerateIntel
     {
 
-        string Location = Locations.GetRandomLocation();
-        DateTime TimeCollected;
+        public static Terrorist terrorist = Hamas.GetTerrorist();
+
+        public static string Location = Locations.GetRandomLocation();
+
+        public static DateTime TimeCollected = RandomDateTime.Next();
+
     }
 }

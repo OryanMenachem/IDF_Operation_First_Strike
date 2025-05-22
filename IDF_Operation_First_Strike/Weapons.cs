@@ -6,22 +6,25 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal static class Weapons
+    internal class Weapons
     {
-        public static string[] weapons = { "knife" , "gun", "AK47", "M16" };
+        public static string[] weapons = { "knife", "gun", "AK47", "M16" };
 
-        
-        public static List<string> weaponsList = new List<string>();
-        
-        
-        public static List<string> GetWeapons()  // Returns a list of weapons according to the index of the weapons list, for example 0 will bring a knife, and 2 will bring a knife and a gun
+        static Random random = new Random();
+
+        public static List<string> GetWeapons()
         {
-            for (int i = 0; i < GetRandomNumber.Rand.Next(0,weapons.Length); i++)
-            { 
-               weaponsList.Add(weapons[i]);
+            List<string> selectedWeapons = new List<string>();
+
+            int howMany = random.Next(1, weapons.Length + 1);
+
+            for (int i = 0; i < howMany; i++)
+            {
+                selectedWeapons.Add(weapons[i]);
             }
-            
-            return weaponsList;
+
+            return selectedWeapons;
         }
+
     }
 }

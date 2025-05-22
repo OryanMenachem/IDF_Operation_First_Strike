@@ -6,20 +6,14 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal class RandomDateTime
+    internal static class RandomDateTime
     {
-        DateTime Start;
-        Random Gen;
-        int Range;
+        static DateTime Start = new DateTime(1995, 1, 1);
+        static Random Gen = new Random();
+        static int Range = (DateTime.Today - Start).Days;
 
-        public  RandomDateTime()
-        {
-            Start = new DateTime(1995, 1, 1);
-            Gen = new Random();
-            Range = (DateTime.Today - Start).Days;
-        }
 
-        public  DateTime Next()
+        public static DateTime Next()
         {
             return Start.AddDays(Gen.Next(Range)).AddHours(Gen.Next(0, 24)).AddMinutes(Gen.Next(0, 60)).AddSeconds(Gen.Next(0, 60));
         }

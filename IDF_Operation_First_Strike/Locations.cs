@@ -8,12 +8,12 @@ namespace IDF_Operation_First_Strike
 {
     internal static class Locations
     {
-        public static string[] LocationList = { "at home", "in a car", "at a meeting", "outside" };
+        public static string[] LocationList = { "at home", "in a car", "outside" };
 
+        static int RandomNum = GetRandomNumber.Rand.Next(LocationList.Length);
         public static string GetRandomLocation()
         {
-            Random rand = new Random();
-            return LocationList[rand.Next(LocationList.Length)];
+            return LocationList[RandomNum];
         }
     }
 }

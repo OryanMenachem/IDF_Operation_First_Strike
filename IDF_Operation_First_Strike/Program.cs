@@ -9,11 +9,7 @@ namespace IDF_Operation_First_Strike
     internal class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine(new RandomDateTime().Next());
-
-
-
+        {     
         }
     }
 }
