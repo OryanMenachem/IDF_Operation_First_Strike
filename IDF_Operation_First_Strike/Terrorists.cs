@@ -21,7 +21,19 @@ namespace IDF_Operation_First_Strike
             Weapons = weapons;
         }
 
-        
+        public override string ToString()
+        {   
+            string weaponsString = string.Empty;
+            foreach (string weapon in Weapons)
+            {
+                weaponsString += weapon + " ";
+            }
+            return $"Terrorist name: {Name} \n" +
+                   $"Rank: {Rank} \n" +
+                   $"weapons: {weaponsString} \n";
+
+        }
+
 
     }
 }
