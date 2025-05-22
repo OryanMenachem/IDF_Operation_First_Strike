@@ -9,10 +9,19 @@ namespace IDF_Operation_First_Strike
     internal class Aman
     {
         public Terrorist Terrorist;
-        public string LastLocation;
+        string LastLocation;
         public DateTime TimeCollected;
 
         public Aman() { }
+
+        public void CreateAReport()
+        {
+            Terrorist = GenerateIntel.terrorist;
+            LastLocation = GenerateIntel.Location;
+            TimeCollected = GenerateIntel.TimeCollected;
+
+            AmanTerroristsReports.AddToTerroristsReports(TimeCollected, Terrorist, LastLocation);
+        }
 
     }
 }

@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal class Program
+    internal static class ShowMenu
     {
-        static void Main(string[] args)
-        {
-            new Aman().CreateAReport();
-            Console.WriteLine();
-        }
+        static void ShowMenu()
+        { }
     }
 }
