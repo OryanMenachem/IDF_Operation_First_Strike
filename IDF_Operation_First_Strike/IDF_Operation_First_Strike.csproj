@@ -43,7 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aman.cs" />
     <Compile Include="F16.cs" />
+    <Compile Include="GenerateIntel.cs" />
+    <Compile Include="Locations.cs" />
     <Compile Include="Hermes460.cs" />
     <Compile Include="IDF.cs" />
     <Compile Include="M109.cs" />
