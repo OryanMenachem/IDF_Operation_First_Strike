@@ -50,12 +50,10 @@
     <Compile Include="Hermes460.cs" />
     <Compile Include="IDF.cs" />
     <Compile Include="M109.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomDateTime.cs" />
     <Compile Include="StrikeOption.cs" />
     <Compile Include="Hamas.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GetRandomNumber.cs" />
     <Compile Include="TerroristGenerator.cs" />
