@@ -10,9 +10,10 @@ namespace IDF_Operation_First_Strike
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(new RandomDateTime().Next());
+            Console.WriteLine(RandomDateTime.Next());
 
-
+           
+            Console.WriteLine(Hamas.CurrentCommander);
 
         }
     }

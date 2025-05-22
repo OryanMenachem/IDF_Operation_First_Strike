@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal class Hamas
+    internal static class Hamas
     {
-        string DateOfEstablishment { get; } = "10/12/1987";
-        string CurrentCommander { get; set; } = "Izz al-Din al-Haddad";
+        public static string DateOfEstablishment { get; private set; } = "10/12/1987";
+        public static string CurrentCommander { get; private set; } = "Izz al-Din al-Haddad";
         
-        List<Terrorist> Terrorists = new List<Terrorist>();
+        static List<Terrorist> TerroristsList = new List<Terrorist>();
+
+        public static void AddTerrorostToHamas(Terrorist terrorist)
+        {
+            TerroristsList.Add(terrorist);
+        }
     }
 
 

@@ -8,8 +8,9 @@ namespace IDF_Operation_First_Strike
 {
     internal class GenerateIntel
     {
-
+        Terrorist terrorist;
         string Location = Locations.GetRandomLocation();
-        DateTime TimeCollected;
+        DateTime TimeCollected = RandomDateTime.Next();
+
     }
 }
