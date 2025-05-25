@@ -10,6 +10,7 @@ namespace IDF_Operation_First_Strike
     {
         public static string DateOfEstablish { get; private set; } = "26/05/1948";
         public static string CurrentCommander { get; private set; } = "Eyal Zamir";
+
         private static List<StrikeOption> strikeOptionsList = new List<StrikeOption>();
 
         public static void AddToStrikeList(StrikeOption option)
