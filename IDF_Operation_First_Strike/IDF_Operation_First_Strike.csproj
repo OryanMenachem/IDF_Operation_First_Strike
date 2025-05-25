@@ -53,6 +53,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomDateTime.cs" />
+    <Compile Include="ComandderMenu.cs" />
+    <Compile Include="ShowMenu.cs" />
+    <Compile Include="StrikeExecution.cs" />
     <Compile Include="StrikeOption.cs" />
     <Compile Include="Hamas.cs" />
     <Compile Include="Program.cs" />
