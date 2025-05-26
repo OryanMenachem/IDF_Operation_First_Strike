@@ -53,6 +53,7 @@
     <Compile Include="strikes\Hermes460.cs" />
     <Compile Include="core\IDF.cs" />
     <Compile Include="strikes\M109.cs" />
+    <Compile Include="strikes\StrikeUnitsInfo.cs" />
     <Compile Include="terrorists\TerroristsPoints.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

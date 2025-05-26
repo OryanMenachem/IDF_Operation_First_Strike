@@ -8,7 +8,7 @@ namespace IDF_Operation_First_Strike
 {
     internal static class AmanTerroristsReports
     {
-        public static Dictionary<DateTime, Dictionary<Terrorist, string>> TerroristsReports;                                                                               
+        public static Dictionary<DateTime, Dictionary<Terrorist, string>> TerroristsReports = new Dictionary<DateTime, Dictionary<Terrorist, string>>();                                                                               
 
         public static void AddToTerroristsReports(DateTime creationDate , Terrorist terrorist, string lastLocation)
         {

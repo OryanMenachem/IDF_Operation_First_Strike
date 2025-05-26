@@ -17,9 +17,9 @@ namespace IDF_Operation_First_Strike
 
         public static void CreateAReport()
         {
-            Terrorist = GenerateIntel.terrorist;
-            LastLocation = GenerateIntel.Location;
-            TimeCollected = GenerateIntel.TimeCollected;
+            Terrorist = new GenerateIntel().terrorist;
+            LastLocation = new GenerateIntel().Location;
+            TimeCollected = new GenerateIntel().TimeCollected;
 
             AmanTerroristsReports.AddToTerroristsReports(TimeCollected, Terrorist, LastLocation);
         }

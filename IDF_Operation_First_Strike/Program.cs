@@ -20,7 +20,9 @@ namespace IDF_Operation_First_Strike
             Aman.CreateAReport();
 
             CommanderMenu.Show();
-            
+            CommanderMenu.HandleChoice();
+
+                                                                                                    
 
         }
     }
