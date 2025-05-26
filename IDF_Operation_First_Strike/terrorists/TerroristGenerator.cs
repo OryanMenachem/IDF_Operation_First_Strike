@@ -15,6 +15,11 @@ namespace IDF_Operation_First_Strike
         public static int GetRandomRank() => GetRandomNumber.Rand.Next(1, 6); // דרגה רנדומלית 1 - 5
 
         public static List<string> GetWeaponsList() => Weapons.GetWeapons();
+
+        public static Terrorist GetTerrorist()
+        {
+            return new Terrorist(GetRandomName(), GetRandomRank(), GetWeaponsList());
+        }
     }
 
 
