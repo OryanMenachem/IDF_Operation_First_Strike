@@ -36,7 +36,12 @@ namespace IDF_Operation_First_Strike
                     break;
 
                 case "3":
-                    Console.WriteLine("");
+                    TerroristsPoints.AddToTerroristsPoints(AmanTerroristsReports.RawTerroristsReports);
+                    PreferredTarget.ShowMostDangerousTerroristInfo();
+                    break;
+
+                case "4":
+
                     break;
 
             }

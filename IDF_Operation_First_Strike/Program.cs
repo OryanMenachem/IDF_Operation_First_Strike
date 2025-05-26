@@ -12,6 +12,7 @@ namespace IDF_Operation_First_Strike
         {
             Terrorist terrorist = TerroristGenerator.GetTerrorist();
             Hamas.AddTerrorostToHamas(terrorist);
+            //Console.WriteLine(Hamas.TerroristsList[0]);
 
             IDF.strikeOptionsList.Add(new F16());
             IDF.strikeOptionsList.Add(new Hermes460());
@@ -19,8 +20,12 @@ namespace IDF_Operation_First_Strike
 
             Aman.CreateAReport();
 
+
+            Console.WriteLine(Aman.LastLocation);
+
             CommanderMenu.Show();
             CommanderMenu.HandleChoice();
+
 
                                                                                                     
 

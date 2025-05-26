@@ -8,17 +8,14 @@ namespace IDF_Operation_First_Strike
 {
     internal class PreferredTarget
     {
-
-        
-        static Dictionary<Terrorist, int> preferredTarget;
-
-        static Terrorist terrorist;
-
-        static int points = 0;
-
-
-        public static Dictionary<Terrorist, int> GetpreferredTarget()
+        private static Dictionary<Terrorist, int> GetpreferredTarget()
         {
+            Dictionary<Terrorist, int> preferredTarget = new Dictionary<Terrorist, int>();
+
+            Terrorist terrorist = null;
+            int points = 0;
+
+
             foreach (var member in TerroristsPoints.terroristsPoints)
             {
                 if (member.Value > points)
@@ -27,14 +24,18 @@ namespace IDF_Operation_First_Strike
                     terrorist = member.Key;
                 }
             }
-
-            preferredTarget.Add(terrorist, points);
+            if (terrorist != null)
+            { preferredTarget[terrorist] = points; }
+            
 
             return preferredTarget;
-        }       
-    }
-
-
-    
-    
+        } 
+        
+        public static void ShowMostDangerousTerroristInfo()
+        {
+            Dictionary<Terrorist, int> preferredTarget = GetpreferredTarget();
+            Console.WriteLine($"most dangerous terrorist that has {preferredTarget[preferredTarget.Keys.FirstOrDefault()]} points is: \n" +
+                                            preferredTarget.Keys.FirstOrDefault());
+        }
+    }   
 }

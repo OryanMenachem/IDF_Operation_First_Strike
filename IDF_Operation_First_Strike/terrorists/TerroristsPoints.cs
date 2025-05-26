@@ -11,13 +11,13 @@ namespace IDF_Operation_First_Strike
         public static Dictionary<Terrorist, int> terroristsPoints = new Dictionary<Terrorist, int>();
 
 
-        public static void AddToTerroristsPoints(List<Terrorist> terroristsList)
+        public static void AddToTerroristsPoints(Dictionary<Terrorist, string> RawterroristsList)
         {
 
 
-            foreach (Terrorist terrorist in terroristsList)
+            foreach (var kvp in RawterroristsList)
             {
-                terroristsPoints.Add(terrorist, terrorist.Rank * WeaponsPoints.GetWeaponsPoints(terrorist));
+                terroristsPoints.Add(kvp.Key, kvp.Key.Rank * WeaponsPoints.GetWeaponsPoints(kvp.Key));
             }
         }
 
