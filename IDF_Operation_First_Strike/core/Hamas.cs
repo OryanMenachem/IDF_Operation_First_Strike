@@ -8,7 +8,7 @@ namespace IDF_Operation_First_Strike
 {
     internal static class Hamas
     {
-        public static string DateOfEstablishment { get; private set; } = "10/12/1987";
+        public static string DateOfEstablishment { get; } = "10/12/1987";
         public static string CurrentCommander { get; private set; } = "Izz al-Din al-Haddad";
         
         public static List<Terrorist> TerroristsList = new List<Terrorist>();
@@ -22,6 +22,8 @@ namespace IDF_Operation_First_Strike
         {
             return TerroristsList[GetRandomNumber.Rand.Next(0, TerroristsList.Count())];
         }
+
+   
 
     }
 

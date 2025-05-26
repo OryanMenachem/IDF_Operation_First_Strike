@@ -63,12 +63,12 @@
     <Compile Include="strikes\StrikeOption.cs" />
     <Compile Include="core\Hamas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="random\GetRandomNumber.cs" />
-    <Compile Include="terrorists\TerroristGenerator.cs" />
-    <Compile Include="terrorists\Terrorists.cs" />
-    <Compile Include="terrorists\TerroristsNames.cs" />
-    <Compile Include="terrorists\Weapons.cs" />
-    <Compile Include="terrorists\WeaponsPoints.cs" />
+    <Compile Include="GetRandomNumber.cs" />
+    <Compile Include="TerroristGenerator.cs" />
+    <Compile Include="Terrorists.cs" />
+    <Compile Include="TerroristsNames.cs" />
+    <Compile Include="Weapons.cs" />
+    <Compile Include="WeaponsPoints.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
