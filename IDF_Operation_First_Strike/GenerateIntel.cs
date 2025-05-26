@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal static class GenerateIntel
+    
+    internal static class GenerateIntel 
     {
 
         public static Terrorist terrorist = Hamas.GetTerrorist();
@@ -15,5 +16,6 @@ namespace IDF_Operation_First_Strike
 
         public static DateTime TimeCollected = RandomDateTime.Next();
 
+        
     }
 }
