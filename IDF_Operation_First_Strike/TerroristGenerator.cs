@@ -8,11 +8,11 @@ namespace IDF_Operation_First_Strike
 {
     internal static class TerroristGenerator
     {
-        private static readonly Random random = new Random();  
+        //private static readonly Random random = new Random();  
 
         public static string GetRandomName() => TerroristsNames.GetRandomName();
 
-        public static int GetRandomRank() => random.Next(1, 6); 
+        public static int GetRandomRank() => GetRandomNumber.Rand.Next(1, 6); // דרגה רנדומלית 1 - 5
 
         public static List<string> GetWeaponsList() => Weapons.GetWeapons();
     }

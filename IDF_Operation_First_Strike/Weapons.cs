@@ -8,17 +8,17 @@ namespace IDF_Operation_First_Strike
 {
     internal class Weapons
     {
-        public static string[] weapons = { "knife", "gun", "AK47", "M16" };
+        static string[] weapons = { "knife", "gun", "AK47", "M16" };
 
-        static Random random = new Random();
+        //static Random random = new Random();
 
         public static List<string> GetWeapons()
         {
             List<string> selectedWeapons = new List<string>();
 
-            int howMany = random.Next(1, weapons.Length + 1);
+            //int howMany = random.Next(1, weapons.Length + 1);
 
-            for (int i = 0; i < howMany; i++)
+            for (int i = 0; i < GetRandomNumber.Rand.Next(0,weapons.Length); i++)
             {
                 selectedWeapons.Add(weapons[i]);
             }
