@@ -31,9 +31,7 @@ namespace IDF_Operation_First_Strike
             preferredTarget.Add(terrorist, points);
 
             return preferredTarget;
-        }
-
-        
+        }       
     }
 
 

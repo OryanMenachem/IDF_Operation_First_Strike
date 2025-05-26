@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="core\Aman.cs" />
     <Compile Include="intel\AmanTerroristsReports.cs" />
+    <Compile Include="random\GetRandomNumber.cs" />
     <Compile Include="strikes\F16.cs" />
     <Compile Include="intel\GenerateIntel.cs" />
     <Compile Include="intel\PreferredTarget.cs" />
@@ -54,6 +55,9 @@
     <Compile Include="core\IDF.cs" />
     <Compile Include="strikes\M109.cs" />
     <Compile Include="strikes\StrikeUnitsInfo.cs" />
+    <Compile Include="terrorists\TerroristGenerator.cs" />
+    <Compile Include="terrorists\Terrorists.cs" />
+    <Compile Include="terrorists\TerroristsNames.cs" />
     <Compile Include="terrorists\TerroristsPoints.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,12 +67,8 @@
     <Compile Include="strikes\StrikeOption.cs" />
     <Compile Include="core\Hamas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GetRandomNumber.cs" />
-    <Compile Include="TerroristGenerator.cs" />
-    <Compile Include="Terrorists.cs" />
-    <Compile Include="TerroristsNames.cs" />
-    <Compile Include="Weapons.cs" />
-    <Compile Include="WeaponsPoints.cs" />
+    <Compile Include="terrorists\Weapons.cs" />
+    <Compile Include="terrorists\WeaponsPoints.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
