@@ -20,11 +20,11 @@ namespace IDF_Operation_First_Strike
 
             else if (lastLocation == "at home")
             {
-                strikeOption =  new F16();
+                strikeOption = new F16();
             }
             else if (lastLocation == "in a car")
             {
-                strikeOption =  new Hermes460();
+                strikeOption = new Hermes460();
             }
             else if (lastLocation == "outside")
             {
@@ -59,6 +59,4 @@ namespace IDF_Operation_First_Strike
                               $"operators: {OperatorName}.");
         }
     }
-
-    
 }
