@@ -16,5 +16,14 @@ namespace IDF_Operation_First_Strike
 
         public Aman() { }
 
+        public void CreateAReport()
+        {
+            Terrorist = GenerateIntel.terrorist;
+            LastLocation = GenerateIntel.Location;
+            TimeCollected = GenerateIntel.TimeCollected;
+
+            AmanTerroristsReports.AddToTerroristsReports(TimeCollected, Terrorist, LastLocation);
+        }
+
     }
 }

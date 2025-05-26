@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal static class ShowMenu
+    internal class IntelligenceAnalysis
     {
-        static void ShowMenu()
-        { }
+        //Terrorist MostCommonTerrorist = 
+
+        //AvailableWeaponsAndCapacity =
+
+
+
+
     }
 }
