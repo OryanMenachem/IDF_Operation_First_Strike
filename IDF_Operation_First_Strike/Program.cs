@@ -10,8 +10,18 @@ namespace IDF_Operation_First_Strike
     {
         static void Main(string[] args)
         {
-            new Aman().CreateAReport();
-            Console.WriteLine();
+            Terrorist terrorist = TerroristGenerator.GetTerrorist();
+            Hamas.AddTerrorostToHamas(terrorist);
+
+            IDF.strikeOptionsList.Add(new F16());
+            IDF.strikeOptionsList.Add(new Hermes460());
+            IDF.strikeOptionsList.Add(new M109());
+
+            Aman.CreateAReport();
+
+            CommanderMenu.Show();
+            
+
         }
     }
 }

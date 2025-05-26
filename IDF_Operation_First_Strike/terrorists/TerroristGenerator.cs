@@ -15,6 +15,11 @@ namespace IDF_Operation_First_Strike
         public static int GetRandomRank() => random.Next(1, 6); 
 
         public static List<string> GetWeaponsList() => Weapons.GetWeapons();
+
+        public static Terrorist GetTerrorist()
+        {
+            return new Terrorist(GetRandomName(), GetRandomRank(), GetWeaponsList());
+        }
     }
 
 

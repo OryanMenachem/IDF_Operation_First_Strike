@@ -15,5 +15,18 @@ namespace IDF_Operation_First_Strike
         {
             return LocationList[RandomNum];
         }
+
+        public static string GetTerroristLocation(Terrorist terrorist)
+        {
+            foreach (var date in AmanTerroristsReports.TerroristsReports)
+            {
+                if (date.Value.ContainsKey(terrorist))
+                {
+                    return date.Value[terrorist];
+                }
+            }
+            Console.WriteLine("no location found connected to this terrorist.");
+            return null;
+        }
     }
 }
