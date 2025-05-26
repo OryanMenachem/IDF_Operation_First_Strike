@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    internal class Aman
+    internal static class Aman
     {
-        public Terrorist Terrorist;
+        public static Terrorist Terrorist;
 
-        public string LastLocation;
+        public static string LastLocation;
 
-        public DateTime TimeCollected;
+        public static DateTime TimeCollected;
 
-        public Aman() { }
 
-        public void CreateAReport()
+        public static void CreateAReport()
         {
             Terrorist = GenerateIntel.terrorist;
             LastLocation = GenerateIntel.Location;
