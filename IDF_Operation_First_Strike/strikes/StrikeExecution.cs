@@ -10,7 +10,7 @@ namespace IDF_Operation_First_Strike
 
     internal class StrikeExecution
     {
-        static string OperatorName = "turaiy Benjy and turaiy oryan";
+        static string OperatorName = "officer Benjy and officer oryan";
         public StrikeOption GetRelevantStrikeUnit(string lastLocation)
         {
             // deffult strike is F16
@@ -53,7 +53,7 @@ namespace IDF_Operation_First_Strike
         {
             Console.WriteLine($"Attack commited at {DateTime.Now}, \n" +
                               $"on the terrorist {terrorist.Name}, \n" +
-                              $"last seen {Locations.GetTerroristLocation(terrorist)}" +
+                              $"last seen {Locations.GetTerroristLocation(terrorist)} \n" +
                               $"using {strikeOption.Name} strike unit, \n" +
                               $"which has {strikeOption.RemainingBombs} strikes left. \n" +
                               $"operators: {OperatorName}.");

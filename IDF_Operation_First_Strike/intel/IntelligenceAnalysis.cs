@@ -10,7 +10,6 @@ namespace IDF_Operation_First_Strike
     {
         //Terrorist MostCommonTerrorist = 
 
-        //AvailableWeaponsAndCapacity =
 
 
 

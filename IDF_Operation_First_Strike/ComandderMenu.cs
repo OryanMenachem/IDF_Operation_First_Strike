@@ -41,7 +41,12 @@ namespace IDF_Operation_First_Strike
                     break;
 
                 case "4":
-
+                    TerroristsPoints.AddToTerroristsPoints(AmanTerroristsReports.RawTerroristsReports);
+                    Terrorist mostDangerousTerrorist = PreferredTarget.GetpreferredTarget().Keys.First();
+                    StrikeExecution strikeExecution = new StrikeExecution();
+                    string location = Locations.GetTerroristLocation(mostDangerousTerrorist);
+                    StrikeOption releventStrike = strikeExecution.GetRelevantStrikeUnit(location);
+                    strikeExecution.Attack(mostDangerousTerrorist, releventStrike);
                     break;
 
             }

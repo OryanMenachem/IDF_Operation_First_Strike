@@ -8,7 +8,7 @@ namespace IDF_Operation_First_Strike
 {
     internal class PreferredTarget
     {
-        private static Dictionary<Terrorist, int> GetpreferredTarget()
+        public static Dictionary<Terrorist, int> GetpreferredTarget()
         {
             Dictionary<Terrorist, int> preferredTarget = new Dictionary<Terrorist, int>();
 
