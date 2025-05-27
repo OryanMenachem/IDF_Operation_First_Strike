@@ -30,7 +30,6 @@ namespace IDF_Operation_First_Strike
             {
                 Show();
                 string choice = Console.ReadLine();
-                Console.Clear(); // Clear screen for better readability
 
                 switch (choice)
                 {
@@ -81,6 +80,7 @@ namespace IDF_Operation_First_Strike
                 {
                     Console.WriteLine("\nPress any key to continue...");
                     Console.ReadKey();
+                    Console.WriteLine();
                 }
             }
         }

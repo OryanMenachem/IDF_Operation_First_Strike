@@ -24,7 +24,6 @@ namespace IDF_Operation_First_Strike
             Console.WriteLine(Aman.LastLocation);
 
 
-            CommanderMenu.Show();
             CommanderMenu.HandleChoice();
 
 
