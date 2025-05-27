@@ -6,32 +6,35 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation_First_Strike
 {
-    // Based on the terrorist's location and type, choose an appropriate strike unit
 
     internal class StrikeExecution
     {
         static string OperatorName = "officer Benjy and officer oryan";
+
+        // Based on the terrorist's location and type, choose an appropriate strike unit
+
         public StrikeOption GetRelevantStrikeUnit(string lastLocation)
         {
-            // deffult strike is F16
-            StrikeOption strikeOption = new F16();
-            if (string.IsNullOrEmpty(lastLocation))
-            { Console.WriteLine("no location givin "); }
+            StrikeOption strikeOption = null;
 
-            else if (lastLocation == "at home")
+            switch (lastLocation)
             {
-                strikeOption = new F16();
-            }
-            else if (lastLocation == "in a car")
-            {
-                strikeOption = new Hermes460();
-            }
-            else if (lastLocation == "outside")
-            {
-                strikeOption = new M109();
+                case "at home":
+                    strikeOption = new F16();
+                    break;
+                case "in a car":
+                    strikeOption = new Hermes460();
+                    break;
+                case "outside":
+                    strikeOption = new M109();
+                    break;
+                default:
+                    Console.WriteLine("ERROR! no location given, Strike option is null.");
+                    break;
             }
 
             return strikeOption;
+
         }
 
         public void Attack(Terrorist terrorist, StrikeOption strikeOption)
